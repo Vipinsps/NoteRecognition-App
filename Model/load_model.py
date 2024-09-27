@@ -28,7 +28,7 @@ def preprocess_image(img_path, target_size):
 target_size = (64, 64)  
 
 # Preprocess the image
-img_path = "archive/Indian currency dataset v1/test/50__147.jpg"
+img_path = "/home/user/Desktop/currency/Screenshot from 2024-06-27 13-05-19.png"
 preprocessed_image = preprocess_image(img_path, target_size)
 
 
@@ -43,7 +43,4 @@ predicted_class = np.argmax(predictions, axis=1)
 # Print the predicted class
 print("Predicted class:", predictions)
 print("aaaaaaaaaaaaaaaaaaaa", predictions)
-
-
-print("Predicted class:", dic[str(predicted_class[0])]) 
-
+print("Predicted class:", dic[str(predicted_class[0])])
